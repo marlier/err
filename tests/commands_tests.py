@@ -105,8 +105,10 @@ class TestCommands(unittest.TestCase):
 
         pushMessage('!export configs')
         configs = popMessage()
+        print(configs)
         self.assertInPython2Safe('127.0.3.4', configs)
         obj = literal_eval(configs)  # be sure it is parseable
+        print(obj)
         obj['Webserver']['HOST'] = '127.0.3.5'
 
         pushMessage('!import configs ' + repr(obj))
