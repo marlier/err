@@ -5,6 +5,10 @@ Version 1.7.3 (2013-12-13)
 --------------------------
 
 Add imports to wsview.py
+=======
+Bugs:
+
+- Missing imports in wsviews.py
 
 Version 1.7.2 (2013-11-16)
 --------------------------
